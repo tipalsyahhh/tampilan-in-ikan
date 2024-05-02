@@ -1,7 +1,15 @@
 function toggleForms() {
-var loginForm = document.querySelector('.from-login');
-var registerForm = document.querySelector('.from-register');
+    switchForms('.from-login', '.from-register');
+}
 
-loginForm.classList.add('hidden');
-registerForm.classList.remove('hidden');
+function returnToLogin() {
+    switchForms('.from-register', '.from-login');
+}
+
+function switchForms(fromFormSelector, toFormSelector) {
+    var fromForm = document.querySelector(fromFormSelector);
+    var toForm = document.querySelector(toFormSelector);
+
+    fromForm.classList.add('hidden');
+    toForm.classList.remove('hidden');
 }
