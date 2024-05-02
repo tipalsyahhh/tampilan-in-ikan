@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: calc(100vw * 0.60);
+    width: calc(100vw * 0.50);
     height: calc(100vh * 0.60);
     border: 10px solid #fff;
     display: flex;
@@ -20,6 +20,8 @@ body {
     background-position: center;
     box-shadow: 0 4px 30px rgb(0 0 0 / 33%);
     border-radius: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 @keyframes fadeIn {
@@ -43,9 +45,8 @@ body {
 }
 
 .from-login {
-    width: calc(100vw * 0.20);
+    width: calc(100vw * 0.20 - 20px);
     padding: 10px;
-    margin-left: 10px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -87,7 +88,7 @@ body {
 }
 
 .from-login h3 {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .button-login {
@@ -142,10 +143,14 @@ body {
     cursor: pointer;
 }
 
+.button-google p {
+    color: #333;
+}
+
 .img-google {
     width: 25px;
     height: 25px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .img-in-ikan {
@@ -155,8 +160,8 @@ body {
 }
 
 .img-in-ikan img {
-    height: calc(100vh * 0.35);
-    width: calc(100vw * 0.25);
+    height: calc(100vh * 0.30);
+    width: calc(100vw * 0.20);
 }
 
 @media (max-width: 768px) {
@@ -169,6 +174,10 @@ body {
         width: 100%;
         margin: 0;
     }
+
+    .from-login h3 {
+        font-size: 25px;
+    }    
 
     .img-in-ikan {
         display: none;
