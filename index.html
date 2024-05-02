@@ -15,23 +15,23 @@
             <div class="from-login">
                 <center>
                     <h3>Welcome to In-ikan</h3>
+                    <form action="/login" method="post" id="input-login">
+                        <div class="username">
+                            <i class="bi bi-person-fill"></i>
+                            <div class="batas-input"></div>
+                            <input type="text" id="username" name="username" placeholder="Username">
+                        </div><br>
+                        <div class="password">
+                            <i class="bi bi-lock-fill"></i>
+                            <div class="batas-input"></div>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </div><br>
+                    </form>
                 </center>
-                <form action="/login" method="post">
-                    <div class="username">
-                        <i class="bi bi-person-fill"></i>
-                        <div class="batas-input"></div>
-                        <input type="text" id="username" name="username" placeholder="Username">
-                    </div><br>
-                    <div class="password">
-                        <i class="bi bi-lock-fill"></i>
-                        <div class="batas-input"></div>
-                        <input type="password" id="password" name="password" placeholder="Password">
-                    </div><br>
-                </form>
                 <button class="forgot">Forgot password?</button>
                 <button class="button-login">Login</button>
                 <center>
-                    <button class="button-register">
+                    <button class="button-register" onclick="toggleForms()">
                         <p>If you don't have an account then <span>register firs!</span></p>
                     </button>
                 </center>
@@ -47,7 +47,7 @@
                     </button>
                 </center>
             </div>
-            <div class="from-register"></div>
+            <div class="from-register hidden"></div>
             <div class="img-in-ikan">
                 <center>
                     <img src="img/koi.png" alt="image">
@@ -55,6 +55,7 @@
             </div>
         </div>
     </div>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

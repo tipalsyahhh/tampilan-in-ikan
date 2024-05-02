@@ -10,7 +10,7 @@ body {
 
 .container {
     width: calc(100vw * 0.50);
-    height: calc(100vh * 0.60);
+    height: calc(100vh * 0.70);
     border: 10px solid #fff;
     display: flex;
     justify-content: center;
@@ -54,7 +54,6 @@ body {
 .password {
     display: flex;
     align-items: center;
-    width: 94%;
     height: 20px;
     border-radius: 10px;
     padding: 10px;
@@ -151,6 +150,10 @@ body {
     width: 25px;
     height: 25px;
     margin-left: 5px;
+}
+
+.hidden {
+    display: none;
 }
 
 .img-in-ikan {
